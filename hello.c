@@ -15,14 +15,18 @@ int main(int argc, const char * argv[])
  printf("Default LC_NUMERIC: %s\n", setlocale(LC_NUMERIC, ""));
  printf("Default LC_TIME: %s\n", setlocale(LC_TIME, ""));
 
- setlocale(LC_ALL, "it_IT");
-
- printf("Using LC_ALL: %s\n", setlocale(LC_ALL, NULL));
- printf("Using LC_COLLATE: %s\n", setlocale(LC_COLLATE, NULL));
- printf("Using LC_CTYPE: %s\n", setlocale(LC_CTYPE, NULL));
- printf("Using LC_MONETARY: %s\n", setlocale(LC_MONETARY, NULL));
- printf("Using LC_NUMERIC: %s\n", setlocale(LC_NUMERIC, NULL));
- printf("Using LC_TIME: %s\n", setlocale(LC_TIME, NULL));
+ char *locale = setlocale(LC_ALL, "it_IT");
+ if (locale == NULL) {
+ 	printf ("Failed to change locale\n");
+ } else {
+	printf ("Changed locale to %s\n", locale);
+	printf("Using LC_ALL: %s\n", setlocale(LC_ALL, NULL));
+	printf("Using LC_COLLATE: %s\n", setlocale(LC_COLLATE, NULL));
+	printf("Using LC_CTYPE: %s\n", setlocale(LC_CTYPE, NULL));
+	printf("Using LC_MONETARY: %s\n", setlocale(LC_MONETARY, NULL));
+	printf("Using LC_NUMERIC: %s\n", setlocale(LC_NUMERIC, NULL));
+	printf("Using LC_TIME: %s\n", setlocale(LC_TIME, NULL));
+ }
 
  bindtextdomain(domain, directory);
  textdomain(domain);
