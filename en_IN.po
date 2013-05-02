@@ -1,0 +1,23 @@
+# English translations for hello package.
+# Copyright (C) 2013 THE hello'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hello package.
+# Automatically generated, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hello\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-02 19:32+0100\n"
+"PO-Revision-Date: 2013-05-02 19:32+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: hello.c:33
+#, c-format
+msgid "Hello, world"
+msgstr "Indian Hello, world"
