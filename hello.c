@@ -30,7 +30,8 @@ int main(int argc, const char * argv[])
 
  bindtextdomain(domain, directory);
  textdomain(domain);
- printf( gettext( "Hello, world!\n" ) );
+ printf( gettext( "Hello, world" ) );
+ printf( "\n" );
 
  exit(0);
 }
