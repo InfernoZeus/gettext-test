@@ -50,7 +50,7 @@ int main(int argc, const char * argv[])
 	printf("Using LC_TIME: %s\n", setlocale(LC_TIME, NULL));
  }
 
-bindtextdomain(domain, directory);
+ bindtextdomain(domain, directory);
  textdomain(domain);
  printf( gettext( "Hello, world" ) );
  printf( "\n" );
