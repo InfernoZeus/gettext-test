@@ -1,7 +1,7 @@
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "gettext.h"
+#include <libintl.h>
 
 int main(int argc, const char * argv[])
 {
